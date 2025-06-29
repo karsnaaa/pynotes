@@ -4,7 +4,7 @@
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width" />
 
-    <title>My Python notes</title>
+    <title>Days Conversion</title>
 
     <link rel="stylesheet" href="https://karsnaaa.github.io/pynotes/theme/css/normalize.css" />
     <link rel="stylesheet" href="https://karsnaaa.github.io/pynotes/theme/css/foundation.min.css" />
@@ -42,10 +42,42 @@
 
     <!-- Main Blog Content -->
     <div class="large-9 columns">
+<article>
+    <header>
+        <h3 class="article-title"><a href="https://karsnaaa.github.io/pynotes/days-conversion.html" rel="bookmark"
+        title="Permalink to Days Conversion">Days Conversion</a></h3>
+    </header>
 
-<ul class="circle">
-</ul>
+<h6 class="subheader" title="2025-06-29T00:00:00-04:00">Sun 29 June 2025
+</h6>
 
+
+    <div class="highlight"><pre><span></span><code><span class="c1"># created :20250629</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># own code</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">days</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter number of days: &quot;</span><span class="p">))</span>
+<span class="n">years</span> <span class="o">=</span> <span class="n">days</span> <span class="o">//</span> <span class="mi">365</span>
+<span class="n">weeks</span> <span class="o">=</span> <span class="p">(</span><span class="n">days</span> <span class="o">%</span> <span class="mi">365</span><span class="p">)</span> <span class="o">//</span> <span class="mi">7</span>
+<span class="n">remaining_days</span> <span class="o">=</span> <span class="p">(</span><span class="n">days</span> <span class="o">%</span> <span class="mi">365</span><span class="p">)</span> <span class="o">%</span> <span class="mi">7</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Years:&quot;</span><span class="p">,</span> <span class="n">years</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Weeks:&quot;</span><span class="p">,</span> <span class="n">weeks</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Days:&quot;</span><span class="p">,</span> <span class="n">remaining_days</span><span class="p">)</span>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p>
+<p class="subheader">Category: <a href="https://karsnaaa.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+
+</article>
     </div>
     <!-- End Main Content -->
 

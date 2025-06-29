@@ -2,9 +2,19 @@
 title: Testing
 date: 2025-06-29
 author: Your Name
-cell_count: 2
-score: 0
+cell_count: 5
+score: 5
 ---
+
+```python
+# created :20250629
+```
+
+
+```python
+https://openai.com/chatgpt/overview/
+```
+
 
 ```python
 def classify_temperature(celsius):
@@ -36,7 +46,10 @@ if __name__ == "__main__":
     main()
 ```
 
-    write your own code
+    Enter the temperature in Celsius:  42
+    
+
+    The temperature is classified as: Hot
     
 
 
@@ -45,5 +58,10 @@ if __name__ == "__main__":
 ```
 
 
+```python
+
+```
+
+
 ---
-**Score: 0**
+**Score: 5**

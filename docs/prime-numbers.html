@@ -4,7 +4,7 @@
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width" />
 
-    <title>Untitled</title>
+    <title>Prime Numbers</title>
 
     <link rel="stylesheet" href="https://karsnaaa.github.io/pynotes/theme/css/normalize.css" />
     <link rel="stylesheet" href="https://karsnaaa.github.io/pynotes/theme/css/foundation.min.css" />
@@ -44,17 +44,38 @@
     <div class="large-9 columns">
 <article>
     <header>
-        <h3 class="article-title"><a href="https://karsnaaa.github.io/pynotes/untitled.html" rel="bookmark"
-        title="Permalink to Untitled">Untitled</a></h3>
+        <h3 class="article-title"><a href="https://karsnaaa.github.io/pynotes/prime-numbers.html" rel="bookmark"
+        title="Permalink to Prime Numbers">Prime Numbers</a></h3>
     </header>
 
 <h6 class="subheader" title="2025-06-29T00:00:00-04:00">Sun 29 June 2025
 </h6>
 
 
-    <hr>
+    <div class="highlight"><pre><span></span><code><span class="c1"># created :20250629</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">share</span><span class="o">.</span><span class="n">google</span><span class="o">/</span><span class="n">camtfs4z8aiYAJNSz</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">num</span> <span class="o">=</span> <span class="mi">29</span>
+<span class="n">flag</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="k">if</span> <span class="n">num</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">num</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="s2">&quot;is not a prime number&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">num</span><span class="p">):</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">num</span> <span class="o">%</span> <span class="n">i</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">flag</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="k">break</span>
+    <span class="k">if</span> <span class="n">flag</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="s2">&quot;is not a prime number&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="s2">&quot;is a prime number&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<hr>
 <p><strong>Score: 0</strong></p>
-<p class="subheader">Category: <a href="https://karsnaaa.github.io/pynotes/category/misc.html">misc</a>
+<p class="subheader">Category: <a href="https://karsnaaa.github.io/pynotes/category/basics.html">basics</a>
 
 </p>
 
