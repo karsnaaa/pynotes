@@ -48,11 +48,37 @@
         title="Permalink to Testing">Testing</a></h3>
     </header>
 
-<h6 class="subheader" title="2025-06-23T00:00:00-04:00">Mon 23 June 2025
+<h6 class="subheader" title="2025-06-29T00:00:00-04:00">Sun 29 June 2025
 </h6>
 
 
-    <div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;write your own code&quot;</span><span class="p">)</span>
+    <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">classify_temperature</span><span class="p">(</span><span class="n">celsius</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Classify the temperature in Celsius.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">    celsius (float): Temperature in degrees Celsius.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">    str: Classification of the temperature.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">celsius</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;Cold&quot;</span>
+    <span class="k">elif</span> <span class="mi">10</span> <span class="o">&lt;=</span> <span class="n">celsius</span> <span class="o">&lt;=</span> <span class="mi">25</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;Moderate&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;Hot&quot;</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">temp_input</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the temperature in Celsius: &quot;</span><span class="p">))</span>
+        <span class="n">classification</span> <span class="o">=</span> <span class="n">classify_temperature</span><span class="p">(</span><span class="n">temp_input</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The temperature is classified as: </span><span class="si">{</span><span class="n">classification</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid input. Please enter a numeric value.&quot;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code>write your own code
