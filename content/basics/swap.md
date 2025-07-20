@@ -2,8 +2,8 @@
 title: Swap
 date: 2025-07-20
 author: Your Name
-cell_count: 3
-score: 0
+cell_count: 5
+score: 5
 ---
 
 ```python
@@ -24,16 +24,26 @@ score: 0
 
 
 ```python
-x = 5
-y = 10
-temp = x
-x = y
-y = temp
+import pandas as pd
 
-print('The value of x after swapping: {}'.format(x))
-print('The value of y after swapping: {}'.format(y))
+```
+
+
+```python
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie'],
+    'Age': [25, 30, 35],
+    'City': ['Delhi', 'Mumbai', 'Bangalore']
+}
+```
+
+
+```python
+df = pd.DataFrame(data)
+print(df)
+
 ```
 
 
 ---
-**Score: 0**
+**Score: 5**

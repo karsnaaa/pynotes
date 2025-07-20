@@ -1,20 +1,10 @@
 ---
-title: Untitled-4648
+title: Untitled1
 date: 2025-07-20
 author: Your Name
-cell_count: 3
+cell_count: 1
 score: 0
 ---
-
-```python
-
-```
-
-
-```python
-
-```
-
 
 ```python
 

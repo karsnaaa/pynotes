@@ -2,8 +2,8 @@
 title: Prime Numbers
 date: 2025-07-20
 author: Your Name
-cell_count: 3
-score: 0
+cell_count: 12
+score: 10
 ---
 
 ```python
@@ -19,19 +19,61 @@ https://share.google/camtfs4z8aiYAJNSz
 ```python
 num = 29
 flag = False
+   
+```
+
+
+```python
 if num == 0 or num == 1:
     print(num, "is not a prime number")
+```
+
+
+```python
 elif num > 1:
     for i in range(2, num):
         if (num % i) == 0:
             flag = True
-            break
-    if flag:
+            brea
+```
+
+
+```python
+ if flag:
         print(num, "is not a prime number")
-    else:
+```
+
+
+```python
+ else:
         print(num, "is a prime number")
 ```
 
 
+```python
+
+```
+
+
+```python
+
+```
+
+
+```python
+
+```
+
+
+```python
+
+```
+
+
+```python
+
+```
+
+
 ---
-**Score: 0**
+**Score: 10**
