@@ -1,9 +1,9 @@
 ---
 title: Hcf
-date: 2025-07-20
+date: 2025-07-21
 author: Your Name
-cell_count: 3
-score: 0
+cell_count: 7
+score: 5
 ---
 
 ```python
@@ -22,15 +22,35 @@ def compute_hcf(x, y):
         smaller = y
     else:
         smaller = x
-    for i in range(1, smaller+1):
+    
+
+
+
+```
+
+
+```python
+for i in range(1, smaller+1):
         if((x % i == 0) and (y % i == 0)):
             hcf = i 
     return hcf
+```
+
+
+```python
 num1 = 54 
+```
+
+
+```python
 num2 = 24
+```
+
+
+```python
 print("The H.C.F. is", compute_hcf(num1, num2))
 ```
 
 
 ---
-**Score: 0**
+**Score: 5**

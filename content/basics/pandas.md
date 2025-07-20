@@ -1,8 +1,8 @@
 ---
 title: Pandas
-date: 2025-07-20
+date: 2025-07-21
 author: Your Name
-cell_count: 22
+cell_count: 23
 score: 20
 ---
 
@@ -127,6 +127,11 @@ if st.button('Go'):
     st.text(output)
 else:
     pass
+```
+
+
+```python
+
 ```
 
 

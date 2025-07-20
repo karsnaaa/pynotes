@@ -1,9 +1,9 @@
 ---
 title: Factorial
-date: 2025-07-20
+date: 2025-07-21
 author: Your Name
-cell_count: 3
-score: 0
+cell_count: 6
+score: 5
 ---
 
 ```python
@@ -18,12 +18,27 @@ score: 0
 
 ```python
 num = int(input("Enter a number: "))
+
+
+
+```
+
+
+```python
 fact = 1
+```
+
+
+```python
 for i in range(1, num + 1):
     fact *= i
+```
+
+
+```python
 print("Factorial of", num, "is", fact)
 ```
 
 
 ---
-**Score: 0**
+**Score: 5**

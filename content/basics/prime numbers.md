@@ -1,8 +1,8 @@
 ---
 title: Prime Numbers
-date: 2025-07-20
+date: 2025-07-21
 author: Your Name
-cell_count: 12
+cell_count: 14
 score: 10
 ---
 
@@ -47,6 +47,16 @@ elif num > 1:
 ```python
  else:
         print(num, "is a prime number")
+```
+
+
+```python
+
+```
+
+
+```python
+
 ```
 
 
