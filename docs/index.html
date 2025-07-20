@@ -438,6 +438,44 @@
 
 
             <article>
+                <a href="https://karsnaaa.github.io/pynotes/pandas.html"><h3 class="article-title">Pandas</h3></a>
+<h6 class="subheader" title="2025-07-20T00:00:00-04:00">Sun 20 July 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>  
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.feature_extraction.text</span><span class="w"> </span><span class="kn">import</span> <span class="n">CountVectorizer</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.naive_bayes</span><span class="w"> </span><span class="kn">import</span> <span class="n">MultinomialNB</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">streamlit</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">st</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;C:/Users/HP/Desktop/OIB-SIP/emailspam/dataset-mail/spam.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;latin-1&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Original Shape:&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s1">&#39;v1&#39;</span><span class="p">,</span> <span class="s1">&#39;v2 …</span></code></pre></div><p class="subheader">Category: <a href="https://karsnaaa.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://karsnaaa.github.io/pynotes/pandas.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://karsnaaa.github.io/pynotes/prime-numbers.html"><h3 class="article-title">Prime Numbers</h3></a>
 <h6 class="subheader" title="2025-07-20T00:00:00-04:00">Sun 20 July 2025
 </h6>
@@ -476,43 +514,6 @@
 
 
                 <a class="button radius secondary small right" href="https://karsnaaa.github.io/pynotes/prime-numbers.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://karsnaaa.github.io/pynotes/quiz.html"><h3 class="article-title">Quiz</h3></a>
-<h6 class="subheader" title="2025-07-20T00:00:00-04:00">Sun 20 July 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1"># created :20250629</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">openai</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">chatgpt</span><span class="o">/</span><span class="n">overview</span><span class="o">/</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">ask_question</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Ask a random addition question, return True if correct.&quot;&quot;&quot;</span>
-    <span class="n">a</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
-    <span class="n">b</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
-    <span class="k">try</span><span class="p">:</span>
-        <span class="n">answer</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;What is </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2"> + </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2">? &quot;</span><span class="p">))</span>
-    <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Please enter a valid number.&quot;</span><span class="p">)</span>
-        <span class="k">return</span> <span class="kc">False</span>
-
-    <span class="k">if …</span></code></pre></div><p class="subheader">Category: <a href="https://karsnaaa.github.io/pynotes/category/basics.html">basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://karsnaaa.github.io/pynotes/quiz.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
