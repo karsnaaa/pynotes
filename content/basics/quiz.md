@@ -2,8 +2,8 @@
 title: Quiz
 date: 2025-07-21
 author: Your Name
-cell_count: 4
-score: 0
+cell_count: 5
+score: 5
 ---
 
 ```python
@@ -19,31 +19,10 @@ https://openai.com/chatgpt/overview/
 ```python
 import random
 
-def ask_question():
-    """Ask a random addition question, return True if correct."""
-    a = random.randint(1, 10)
-    b = random.randint(1, 10)
-    try:
-        answer = int(input(f"What is {a} + {b}? "))
-    except ValueError:
-        print("Please enter a valid number.")
-        return False
 
-    if answer == a + b:
-        print("✅ Correct!")
-        return True
-    else:
-        print(f"❌ Incorrect. The right answer is {a + b}.")
-        return False
 
-def quiz(num_questions=10):
-    """Run the quiz for a fixed number of questions."""
-    score = 0  # important: initialize once outside loop
-    for i in range(1, num_questions + 1):
-        print(f"\nQuestion {i}/{num_questions}")
-        if ask_question():
-            score += 1
-    print(f"\n🎉 Quiz complete! Your score: {score}/{num_questions}")
+    
+
 
 if __name__ == "__main__":
     quiz()
@@ -135,9 +114,28 @@ if __name__ == "__main__":
 
 
 ```python
+def ask_question():
+    """Ask a random addition question, return True if correct."""
+    a = random.randint(1, 10)
+    b = random.randint(1, 10)
+    try:
+        answer = int(input(f"What is {a} + {b}? "))
+    except ValueError:
+        print("Please enter a valid number.")
+        return False
+```
+
+
+```python
+if answer == a + b:
+        print("✅ Correct!")
+        return True
+    else:
+        print(f"❌ Incorrect. The right answer is {a + b}.")
+        return False
 
 ```
 
 
 ---
-**Score: 0**
+**Score: 5**
